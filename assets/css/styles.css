@@ -1,0 +1,26 @@
+body {
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  transition: 1s;
+}
+
+/* styling btn */
+#getWeatherBtn {
+  background: linear-gradient(to right, #7faaff, #c9d6ff);
+  color: #222;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+   margin-top: 1rem; /* Add this line for top spacing */
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.3s, color 0.3s;
+  
+}
+
+#getWeatherBtn:hover, #getWeatherBtn:focus {
+  background: linear-gradient(to right, #5a9bf6, #b3cfff);
+  color: #000;
+}

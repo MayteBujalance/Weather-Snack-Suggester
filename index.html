@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A fun and engaging weather app built with JavaScript!">
+  <meta name="keywords" content="Weather app, snacl app, find the weather and snack suggestion, JavaScript project">
+    
+    <!-- Sets a theme colour when opened in a mobile browser -->
+    <meta name="theme-color" content="#0073e6">
+
+    <!-- Open Graph (OG) metadata. controls how the website appears when shared on social Media -->
+    <meta property="og:title" content="Weather snack suggestion App">
+    <meta property="og:description" content="Get the weather and the perfect snack to have on the day!">
+  
+    <title>Weather Snack App</title>
+
+    <!-- **** Favicon Link-->
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Link to Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+
+    <!-- video background -->
+  <video id="bgVideo" autoplay muted loop playsinline style="position:fixed;top:0;left:0;width:100vw;height:100vh;object-fit:cover;z-index:-1;pointer-events:none;">
+    <source id="bgVideoSource" src="assets/videos/defaultBackground.mp4" type="video/mp4">
+    <!-- fallback gradient will show if video fails -->
+  </video>
+  
+<!-- Main container -->
+  <div class="container">
+    <h1 class="text-center">Weather & Snack Suggester</h1>
+
+    <div class="card p-4 shadow rounded" style="max-width: 600px; margin: auto;">
+        <label for="cityInput" class="form-label">Enter a city to get the weather and snack suggestion:</label> <br>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="getWeatherBtn" class= "btn btn-sm rounded-pill d-block mx-auto">Get Weather</button>
+    </div>
+
+   <div class="row justify-content-center align-items-center mt-4">
+  <div class="card text-center mb-3" style="max-width: 600px; margin: auto;">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-3 mb-md-0" id="weatherResult">weather result</div>
+        <div class="col-12 col-md-6" id="snackSuggestion">snack</div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+<!-- Bootsatrap JS link -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</body>
+</html>
