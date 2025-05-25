@@ -24,3 +24,26 @@ body {
   background: linear-gradient(to right, #5a9bf6, #b3cfff);
   color: #000;
 }
+
+h1 {
+  background: rgba(60, 60, 60, 0.6);
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+  padding: 0.5em 1em;
+  margin: 2rem auto 1.5rem auto;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+.form-label {
+  background: rgba(30, 30, 30, 0.4);
+  color: #fff;
+  padding: 0.25em 0.75em;
+  border-radius: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  display: inline-block;
+}@

@@ -46,7 +46,6 @@ function changeBackground(temp) {
   const bgVideo = document.getElementById('bgVideo');
   const bgVideoSource = document.getElementById('bgVideoSource');
 
-
   let videoFile = "defaultBackground.mp4"; // Default video file
   if (temp < 10) {
     videoFile = "coldLandscapeBackground.mp4";
