@@ -109,7 +109,7 @@ function suggestSnack(temp) {
 
 // Pick and show a random snack in one line
   document.getElementById('snackSuggestion').innerText =
-    `Suggested snack: ${snacksArray[Math.floor(Math.random() * snacksArray.length)]}`;
+    `Staying healthy is important. We suggest you have: ${snacksArray[Math.floor(Math.random() * snacksArray.length)]}`;
 
 //   Longer code that rdoes the same as the above. I am learning.
 //   const randomIndex = Math.floor(Math.random() * snacksArray.length);
