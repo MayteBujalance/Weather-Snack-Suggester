@@ -44,10 +44,16 @@
   </video>
   
 <!-- Main container -->
-  <div class="container">
-    <h1 class="text-center">Weather & Snack Suggester</h1>
+  <!-- dark mode  button -->
+<div class="container">
+    <div class="container">
+<button id="toggleDarkMode" class="btn btn-dark mb-3" style="float:right;">
+  <i id="toggle-icon" class="fa fa-moon-o"></i>
+</button>
+  <!-- main -->
+  <h1 class="text-center">Weather & Snack Suggester</h1>
 
-    <div class="card p-4 shadow rounded" style="max-width: 600px; margin: auto; background: rgba(0,123,255,0.2); border: none;"><label for="cityInput" class="form-label">Enter a city to get the weather and snack suggestion:</label> <br>
+   <div class="card p-4 shadow rounded" style="max-width: 600px; margin: auto; background: rgba(0,123,255,0.2); border: none;"><label for="cityInput" class="form-label">Enter a city to get the weather and snack suggestion:</label> <br>
       <input type="text" id="cityInput" placeholder="Enter city name">
       <button id="getWeatherBtn" class="btn btn-sm rounded-pill d-block mx-auto">Get Weather</button>
     <div class="row justify-content-center align-items-center mt-4">

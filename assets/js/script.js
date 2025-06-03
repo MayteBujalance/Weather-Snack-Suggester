@@ -131,4 +131,26 @@ document.getElementById('cityInput').addEventListener('keydown', function(e) {
   }
 });
 
+// Dark mode toggle
+const darkModeBtn = document.getElementById('toggleDarkMode');
+const toggleIcon = document.getElementById('toggle-icon');
+const bgVideo = document.getElementById('bgVideo');
 
+let darkMode = false;
+
+darkModeBtn.addEventListener('click', function() {
+  darkMode = !darkMode;
+  
+  if (darkMode) {
+    document.body.classList.add('dark-mode');
+    bgVideo.style.display = 'none'; // Hide the video
+    // change to sun icon
+    toggleIcon.classList.remove("fa-moon-o");
+    toggleIcon.classList.add("fa-sun-o");
+
+  } else {
+    document.body.classList.remove('dark-mode');
+    bgVideo.style.display = ''; // Show the video
+    toggleIcon.classList.add("fa-moon-o");
+  }
+});
