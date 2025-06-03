@@ -89,8 +89,10 @@ function displayWeather(data) {
   const temp = data.main.temp;
   const feelsLike = data.main.feels_like;
   const weather = data.weather[0].main;
+  const city = data.name;
+  const country = data.sys.country;
   document.getElementById('weatherResult').innerText =
-    `It's ${temp}°C but it feels like ${feelsLike} with ${weather} in ${data.name}. Enjoy your day!`;
+    `It's ${temp}°C but it feels like ${feelsLike} with ${weather} in ${city}, ${country}. Enjoy your day!`;
 }
 
 // This function suggests a snack based on the temperature
