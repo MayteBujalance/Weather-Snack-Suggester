@@ -147,12 +147,13 @@ darkModeBtn.addEventListener('click', function() {
     document.body.classList.add('dark-mode');
     bgVideo.style.display = 'none'; // Hide the video
     // change to sun icon
-    toggleIcon.classList.remove("fa-moon-o");
-    toggleIcon.classList.add("fa-sun-o");
+    toggleIcon.classList.remove("fa-regular", "fa-moon");
+    toggleIcon.classList.add("fa-solid", "fa-sun", "sun-bright");
 
   } else {
     document.body.classList.remove('dark-mode');
     bgVideo.style.display = ''; // Show the video
-    toggleIcon.classList.add("fa-moon-o");
+    toggleIcon.classList.remove("fa-solid", "fa-sun", "sun-bright");
+    toggleIcon.classList.add("fa-regular", "fa-moon");
   }
 });
